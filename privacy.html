@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Glitched</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #666;
+            background: #FFFFFF;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #000;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 0.9em;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #FF5500;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #000;
+            font-weight: 400;
+        }
+        .last-updated {
+            color: #999;
+            margin-bottom: 60px;
+            font-size: 0.9em;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #000;
+            font-weight: 400;
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.15em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #000;
+            font-weight: 400;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.05em;
+        }
+        ul {
+            margin-bottom: 20px;
+            margin-left: 0;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 12px;
+            color: #666;
+            padding-left: 20px;
+            position: relative;
+        }
+        li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #FF5500;
+        }
+        strong {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #000;
+        }
+        .footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-top: 1px solid #E5E5E5;
+            margin-top: 80px;
+        }
+        .footer p {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 24px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Glitched</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: November 20, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>Glitched is operated by Social Craft Agentur, Neue Krugallee 150, 12437 Berlin, Germany. We are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use the Glitched mobile application.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Photos and Images</h3>
+        <p>When you use Glitched to edit photos:</p>
+        <ul>
+            <li><strong>Local Storage:</strong> All original and edited photos are stored locally on your device only</li>
+            <li><strong>AI Processing:</strong> When you create an edit, your photo is temporarily sent to our secure server (Supabase Edge Function) which forwards it to Google's Gemini AI for processing</li>
+            <li><strong>No Cloud Storage:</strong> We do not store your photos on our servers after processing is complete</li>
+            <li><strong>No Permanent Server Storage:</strong> Images are only held in memory during the editing process and are immediately discarded afterward</li>
+        </ul>
+
+        <h3>2.2 Anonymous Authentication</h3>
+        <p>To provide our AI editing service securely, we use Supabase anonymous authentication:</p>
+        <ul>
+            <li>An anonymous user ID is generated automatically when you first use the app</li>
+            <li>This ID is not linked to your identity, email, phone number, or any personal information</li>
+            <li>It's used solely for rate limiting and service security</li>
+            <li>The anonymous session is stored locally on your device</li>
+        </ul>
+
+        <h3>2.3 Device Information</h3>
+        <p>For rate limiting and abuse prevention, we collect:</p>
+        <ul>
+            <li>A stable device identifier (UUID stored in your device's keychain)</li>
+            <li>This is used to enforce usage limits (5 AI requests per minute)</li>
+            <li>No device metadata, hardware information, or tracking data is collected</li>
+        </ul>
+
+        <h3>2.4 Information We DO NOT Collect</h3>
+        <ul>
+            <li>No personal information (name, email, phone number)</li>
+            <li>No location data</li>
+            <li>No browsing history or app usage analytics</li>
+            <li>No advertising identifiers</li>
+            <li>No cookies or tracking pixels</li>
+            <li>No contacts, calendar, or other device data</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+
+        <h3>3.1 AI Image Processing</h3>
+        <p>Photos you select for editing are:</p>
+        <ul>
+            <li>Temporarily sent to our Supabase Edge Function</li>
+            <li>Forwarded to Google's Gemini AI for image editing</li>
+            <li>Returned to your device and stored locally</li>
+            <li>Not retained on our servers after processing</li>
+        </ul>
+
+        <h3>3.2 Service Security</h3>
+        <p>Your anonymous user ID and device identifier are used to:</p>
+        <ul>
+            <li>Authenticate API requests securely</li>
+            <li>Prevent abuse and enforce rate limits</li>
+            <li>Ensure service stability and availability</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+
+        <h3>4.1 Google Gemini AI</h3>
+        <p>We use Google's Gemini image editing models to process your photos. When you create an edit:</p>
+        <ul>
+            <li>Your photo and editing instruction are sent to Google's API</li>
+            <li>Google processes the image and returns the edited version</li>
+            <li>Google's privacy policy applies to this processing: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            <li>We do not share any personal information with Google</li>
+        </ul>
+
+        <h3>4.2 Supabase</h3>
+        <p>We use Supabase for backend infrastructure:</p>
+        <ul>
+            <li>Anonymous authentication is managed through Supabase</li>
+            <li>Edge Functions process your AI requests securely</li>
+            <li>No personal data is stored in Supabase databases</li>
+            <li>Supabase privacy policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
+        </ul>
+
+        <h3>4.3 Superwall (Paywall Provider)</h3>
+        <p>We use Superwall for in-app purchase management:</p>
+        <ul>
+            <li>Superwall may collect anonymous usage data for paywall optimization</li>
+            <li>No personal information is shared with Superwall</li>
+            <li>Superwall privacy policy: <a href="https://superwall.com/privacy" target="_blank">https://superwall.com/privacy</a></li>
+        </ul>
+
+        <h3>4.4 Apple (In-App Purchases)</h3>
+        <p>If you make in-app purchases:</p>
+        <ul>
+            <li>All payment processing is handled by Apple</li>
+            <li>We do not have access to your payment information</li>
+            <li>Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></li>
+        </ul>
+
+        <h2>5. Data Storage and Security</h2>
+
+        <h3>5.1 Local Storage</h3>
+        <ul>
+            <li>All photos (original and edited) are stored only on your device</li>
+            <li>Edit history is maintained locally in your app's storage</li>
+            <li>No data is synced to the cloud</li>
+        </ul>
+
+        <h3>5.2 Security Measures</h3>
+        <ul>
+            <li>All API requests use JWT (JSON Web Token) authentication</li>
+            <li>Communication between the app and our servers is encrypted (HTTPS)</li>
+            <li>Our Gemini API key is never exposed in the app</li>
+            <li>Rate limiting prevents abuse and protects infrastructure</li>
+        </ul>
+
+        <h2>6. Data Retention</h2>
+        <ul>
+            <li><strong>Photos:</strong> Stored on your device until you manually delete them</li>
+            <li><strong>Anonymous User ID:</strong> Stored in Supabase for the lifetime of the app installation</li>
+            <li><strong>Device ID:</strong> Stored locally on your device in keychain</li>
+            <li><strong>Server Logs:</strong> Technical logs (request IDs, latency metrics) are retained for up to 7 days for debugging purposes only</li>
+        </ul>
+
+        <h2>7. Your Rights and Choices</h2>
+
+        <h3>7.1 Delete Your Data</h3>
+        <ul>
+            <li><strong>Photos:</strong> Delete directly from the app's history view</li>
+            <li><strong>All App Data:</strong> Uninstall the app to remove all local data</li>
+            <li><strong>Anonymous User ID:</strong> Automatically deleted upon app uninstallation</li>
+        </ul>
+
+        <h3>7.2 Photo Library Access</h3>
+        <ul>
+            <li>The app requests permission to access your photo library</li>
+            <li>You can revoke this permission at any time in iOS Settings → Privacy → Photos</li>
+            <li>The app cannot function without photo access</li>
+        </ul>
+
+        <h3>7.3 Camera Access</h3>
+        <ul>
+            <li>The app requests camera access to capture new photos</li>
+            <li>You can revoke this permission at any time in iOS Settings → Privacy → Camera</li>
+            <li>Camera access is optional; you can still select existing photos</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Glitched is not intended for use by children under 13 years of age. We do not knowingly collect information from children under 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:info@social-craft.de">info@social-craft.de</a>.</p>
+
+        <h2>9. International Users</h2>
+        <p>Glitched is operated from Germany by Social Craft Agentur. If you use the app from outside the EU, your information may be transferred to and processed in Germany and the United States (for AI processing via Google Gemini and Supabase infrastructure).</p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do:</p>
+        <ul>
+            <li>The "Last Updated" date at the top will be revised</li>
+            <li>Material changes will be communicated via app update notes</li>
+            <li>Continued use of the app after changes constitutes acceptance</li>
+        </ul>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+        <ul>
+            <li><strong>Company:</strong> Social Craft Agentur</li>
+            <li><strong>Address:</strong> Neue Krugallee 150, 12437 Berlin, Germany</li>
+            <li><strong>Email:</strong> <a href="mailto:info@social-craft.de">info@social-craft.de</a></li>
+            <li><strong>App Support:</strong> Settings → Contact Support</li>
+        </ul>
+
+        <h2>12. California Privacy Rights</h2>
+        <p>If you are a California resident, you have the right to:</p>
+        <ul>
+            <li>Know what personal information we collect</li>
+            <li>Request deletion of your personal information</li>
+            <li>Opt-out of the sale of personal information (we do not sell personal information)</li>
+        </ul>
+        <p>Since we do not collect personal information beyond anonymous identifiers, these rights are automatically satisfied by our privacy-first design.</p>
+
+        <h2>13. GDPR Rights (EU Users)</h2>
+        <p>If you are in the European Economic Area (EEA), you have rights under GDPR including:</p>
+        <ul>
+            <li>Right to access your data (minimal data is collected)</li>
+            <li>Right to erasure (uninstall the app)</li>
+            <li>Right to data portability (photos are stored locally on your device)</li>
+            <li>Right to object to processing (you control when edits are made)</li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2025 Social Craft Agentur. All rights reserved.</p>
+            <p>Neue Krugallee 150, 12437 Berlin, Germany</p>
+        </div>
+    </div>
+</body>
+</html>

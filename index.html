@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glitched - AI-powered surreal photo edits for iOS. Fast, local-first, and engineered for chaos.">
+    <title>Glitched - AI-Powered Reality Bending</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Alfa Slab One';
+            src: url('AlfaSlabOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Instrument Serif';
+            src: url('InstrumentSerif-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #666;
+            background: #FFFFFF;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 100px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        .logo {
+            font-family: 'Alfa Slab One', sans-serif;
+            font-size: 4em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #FF5500;
+            letter-spacing: -2px;
+        }
+        .tagline {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.4em;
+            margin-bottom: 0;
+            color: #000;
+            font-weight: normal;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #000;
+            font-weight: 400;
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #000;
+            font-weight: 400;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.05em;
+            max-width: 700px;
+        }
+        ul {
+            margin-bottom: 20px;
+            margin-left: 0;
+            list-style: none;
+            max-width: 700px;
+        }
+        li {
+            margin-bottom: 12px;
+            color: #666;
+            padding-left: 20px;
+            position: relative;
+        }
+        li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 40px 0 60px 0;
+        }
+        .feature-box {
+            padding: 0;
+        }
+        .feature-title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #000;
+            font-size: 1.1em;
+        }
+        .feature-desc {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-top: 1px solid #E5E5E5;
+            margin-top: 80px;
+        }
+        .footer-links {
+            margin-bottom: 30px;
+        }
+        .footer-links a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 0.95em;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #FF5500;
+        }
+        .footer p {
+            color: #999;
+            font-size: 0.9em;
+            margin: 0 auto 8px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #FF5500;
+        }
+
+        strong {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 24px;
+            }
+            .logo {
+                font-size: 2.5em;
+            }
+            .tagline {
+                font-size: 1.1em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">GLITCHED</div>
+            <div class="tagline">AI-powered surreal photo edits for iOS</div>
+        </div>
+
+        <section>
+            <h2>Overview</h2>
+            <p>Glitched is a privacy-focused iOS app for creating hyperreal, AI-generated edits. Insert anything into your photos — characters, animals, chaos, surreal scenes — powered by Google's Gemini image models.</p>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-title">Reality Bending</div>
+                    <div class="feature-desc">Insert anything: people, animals, objects, chaos. Hyperreal quality powered by Gemini AI.</div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-title">Viral Ready</div>
+                    <div class="feature-desc">Prank mode, surreal edits, and viral moments. TikTok-optimized for instant sharing.</div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-title">Privacy First</div>
+                    <div class="feature-desc">Everything stored locally on your device. No cloud storage, no tracking.</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+
+            <h3>AI-Powered Edits</h3>
+            <ul>
+                <li>Insert realistic objects, people, and animals into any photo</li>
+                <li>Prompt-free templates for instant results</li>
+                <li>Custom prompts for unlimited creativity</li>
+                <li>Instant processing with Google Gemini AI</li>
+            </ul>
+
+            <h3>Local-First Gallery</h3>
+            <ul>
+                <li>Full privacy: all edits stay on your device</li>
+                <li>No cloud database or remote storage</li>
+                <li>Browse your entire creation history offline</li>
+                <li>Quick re-edit to refine results</li>
+            </ul>
+
+            <h3>Creative Modes</h3>
+            <ul>
+                <li><strong>Prank Mode:</strong> Add realistic SWAT vans, crime scenes, unexpected visitors</li>
+                <li><strong>Viral Mode:</strong> Kitten chaos, alien sightings, ghost figures</li>
+                <li><strong>Surreal Mode:</strong> Dreamlike landscapes and impossible scenes</li>
+                <li><strong>Utility Mode:</strong> Professional headshots, style transfers</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Privacy & Security</h2>
+            <p><strong>Your photos never leave your device</strong> except when being processed by our secure AI service. We don't track you, sell your data, or store your images on our servers.</p>
+
+            <h3>How It Works</h3>
+            <ul>
+                <li>All original and edited photos stored locally on your device</li>
+                <li>AI processing happens through a secure Supabase Edge Function</li>
+                <li>Photos are processed and immediately discarded from servers</li>
+                <li>Anonymous authentication with no personal information required</li>
+                <li>No analytics, tracking, or advertising IDs</li>
+            </ul>
+
+            <p>Read our full <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </section>
+
+        <section>
+            <h2>Technical Details</h2>
+            <ul>
+                <li><strong>Platform:</strong> iOS 17+</li>
+                <li><strong>AI Model:</strong> Google Gemini Image Editing</li>
+                <li><strong>Storage:</strong> Local file system (no cloud sync)</li>
+                <li><strong>Authentication:</strong> Anonymous (no account required)</li>
+                <li><strong>Rate Limit:</strong> 5 edits per minute (free tier)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Roadmap</h2>
+            <ul>
+                <li>Extended template library</li>
+                <li>Faster AI processing with caching</li>
+                <li>Community-created presets</li>
+                <li>Story generator mode (multi-image scenes)</li>
+                <li>On-device editing with Gemini Nano</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:info@social-craft.de">Support</a>
+        </div>
+        <p>© 2025 Social Craft Agentur. All rights reserved.</p>
+        <p>Neue Krugallee 150, 12437 Berlin, Germany</p>
+    </div>
+</body>
+</html>
